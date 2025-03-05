@@ -29,3 +29,31 @@ h4.sT1{
 
 
 /* 3. id selector */
+
+#kegiatan1{
+    color: red;
+}
+
+ul li#kegiatan2{
+   background-color: coral;
+   margin-bottom: 5px;
+   width: 10em;
+}
+
+
+/* 4. child selector */
+
+p>b{
+    color: green;
+}
+
+li>b{
+    color: rgb(128, 0, 117);
+}
+
+
+/* 5. decendant selector */
+
+p b{
+    color: green;
+}
