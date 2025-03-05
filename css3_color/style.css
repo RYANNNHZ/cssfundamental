@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* color name */
+h1{
+    color: dodgerblue;
+}
+/* hex code */
+h2{
+    color: #f83131;
+}
+/* rgba */
+h3{
+    color: rgba(0, 0, 255, 0.5);
+    /* last parameter is oppacity
+    the value is between 0.0 - 1 */
+}
