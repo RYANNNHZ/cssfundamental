@@ -1,0 +1,41 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    /*mengubah capitalisasi text*/
+    text-transform: uppercase;
+    text-align: center;
+    color: deepskyblue;
+    /*bayangan pada text*/
+    text-shadow: -5px 5px 10px black;
+    /*jarak antar kata*/
+    word-spacing: 0.5em;
+}
+
+p{
+    /*megubah align text */
+    text-align: justify;
+    /*jarak antar huruf*/
+    letter-spacing: 2px;
+}
+
+.tautan{
+    text-decoration: none;
+    font-size: 120%;
+}
+
+/*menemtukan kondisi tautan ketika di hover*/
+.tautan:hover{
+    color: deeppink;
+}
+
+/*menemtukan kondisi tautan ketika active*/
+.tautan:active{
+    color: yellow;
+}
+
+/*menemtukan kondisi tautan ketika visited*/
+.tautan:visited{
+    color: greed;
+}
