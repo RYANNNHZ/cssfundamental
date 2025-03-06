@@ -1,0 +1,72 @@
+body {
+    
+}
+
+h1{
+    border:3px dotted red;
+    border-bottom-style:double ;
+}
+
+
+h1+h2{
+    border-top-style:solid  ;
+    border-top-color:red;
+    border-top-width:4px;
+}
+
+h3#a3{
+    border:5px solid green;
+    border-width:9px 6px;
+            /*atas bawah*/ /*kiri kanan*/
+}
+
+
+h3#a4{
+   border:5px solid cyan;
+    border-width:1px 5px 10px 20px; 
+}
+
+.p1,.p2,.p3,.p4,.p5,.p6,.p7{
+    background-color:gold;
+    width:100px;
+    height:50px;
+    text-align:center;
+   
+
+}
+
+.p1{
+    padding:15px;
+    margin:15px;
+    /*kiri kanan atas bawah 15px*/
+}
+
+.p2{
+    padding:15px 10px;
+    margin:15px 10px;
+    /*atas bawah 15px kiri kanan 10px*/
+}
+
+.p3{
+    padding:10px 12px 15px 17px;
+    margin:10px 12px 15px 17px;
+    /*(10px atas) (12px kanan) (15px bawah) (17px kiri)*/
+}
+
+.p4{
+    padding:20px 0px 0px 0px;
+    
+}        
+
+.p5{
+    margin:auto;
+}
+
+.p6{
+  margin:10px 10px 10px auto;  
+}
+
+.p7{
+
+  /* margin:10px auto 10px 10px;  tidak perlu ini hanya contoh*/
+}
