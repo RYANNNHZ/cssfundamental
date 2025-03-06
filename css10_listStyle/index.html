@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh List Style</title>
+    <style>
+        /* Gaya untuk daftar tak terurut (unordered list) */
+        ul {
+            list-style-type: circle; /* Jenis marker daftar dengan lingkaran */
+            margin-left: 20px; /* Jarak dari tepi kiri */
+        }
+
+        /* Gaya untuk daftar terurut (ordered list) */
+        ol {
+            list-style-type: decimal; /* Jenis marker daftar dengan angka desimal */
+            margin-left: 20px; /* Jarak dari tepi kiri */
+        }
+
+        /* Gaya untuk item daftar dalam daftar tak terurut */
+        li {
+            margin: 5px 0; /* Jarak antara setiap item daftar */
+        }
+
+        /* Gaya untuk item daftar dalam daftar terurut */
+        ol li {
+            font-weight: bold; /* Teks tebal pada item daftar terurut */
+        }
+
+        /* Gaya untuk daftar tak terurut bersarang */
+        ul ul {
+            list-style-type: square; /* Jenis marker daftar dengan kotak */
+        }
+
+        /* Gaya untuk item daftar dalam daftar tak terurut bersarang */
+        ul ul li {
+            font-style: italic; /* Teks dalam daftar tak terurut bersarang menjadi miring */
+        }
+        
+        .text{
+    list-style-type:square ;
+    list-style-position:inside;
+}
+
+    ul.text>li{
+        width: 300px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>Contoh List Style</h1>
+    <h2>Daftar Tak Terurut (Unordered List)</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <ul>
+            <li>Subitem 3.1</li>
+            <li>Subitem 3.2</li>
+        </ul>
+    </ul>
+
+    <h2>Daftar Terurut (Ordered List)</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    
+    <ul class="text">
+        <li>Dilansir situs BMKG, suhu panas di Indonesia adalah fenomena akibat adanya gerak semu matahari yang merupakan suatu siklus yang biasa dan terjadi setiap tahun. Potensi suhu udara panas seperti itu dapat berulang pada periode yang sama setiap tahunnya</li>
+         <li>Dilansir situs BMKG, suhu panas di Indonesia adalah fenomena akibat adanya gerak semu matahari yang merupakan suatu siklus yang biasa dan terjadi setiap tahun. Potensi suhu udara panas seperti itu dapat berulang pada periode yang sama setiap tahunnya</li>
+          <li>Dilansir situs BMKG, suhu panas di Indonesia adalah fenomena akibat adanya gerak semu matahari yang merupakan suatu siklus yang biasa dan terjadi setiap tahun. Potensi suhu udara panas seperti itu dapat berulang pada periode yang sama setiap tahunnya</li>
+    </ul>
+</body>
+</html>

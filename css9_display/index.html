@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css display</title>
+    <style>
+
+
+/*display: block: Membuat elemen menjadi blok dan menempati lebar penuh dari elemen induknya
+
+.
+
+display: inline: Membuat elemen berperilaku seperti teks, mengabaikan lebar dan tinggi.
+
+
+
+display: inline-block: Membuat elemen berperilaku seperti inline, tetapi memungkinkan untuk mengatur lebar dan tinggi serta elemen lainnya akan berdampingan secara horizontal.
+
+
+
+display: none: Menyembunyikan elemen sepenuhnya sehingga tidak akan terlihat di halaman web.
+
+
+
+Anda dapat mengganti-nilai properti display dalam kode di atas untuk melihat perbedaannya secara langsung. Semoga ini membantu Anda memahami cara kerja properti display dalam CSS!
+*/
+
+        /* Contoh 1: Display Block */
+        .block {
+            display: block;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        /* Contoh 2: Display Inline */
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+        }
+
+        /* Contoh 3: Display Inline-Block */
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin-left: 10px;
+        }
+
+        /* Contoh 4: Display None */
+        .hidden {
+            display: none;
+        }
+        
+        /* Container dengan display flex */
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Aligment horizontal: ratakan elemen di antara */
+            align-items: center; /* Aligment vertikal: tengahkan elemen secara vertikal */
+            height: 200px;
+            background-color: lightblue;
+            padding: 10px;
+            flex-wrap:wrap;
+            flex-direction:row-reverse;
+        }
+
+        /* Item flex */
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        
+        
+        .gridparent{
+        background:black;
+        display:grid;
+        justify-content:space-around;
+        gap:10px;
+        grid-template-columns:30% 30% 20%;
+        grid-template-rows:100px 100px 100px;
+            
+        }
+        
+        
+        .grid{
+            background:red;
+        }
+        
+        .g1{
+            grid-column-start:1;
+            grid-column-end:span 3;
+        }
+        
+        .g2{
+            grid-row-start:2;
+            grid-row-end:span 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contoh Penggunaan Properti "display" pada CSS</h2>
+
+    <h3>Display Block</h3>
+    <div class="block">Ini adalah elemen dengan display block.</div>
+
+    <h3>Display Inline</h3>
+    <span class="inline">Ini adalah elemen dengan display inline.</span>
+    <span class="inline">Ini juga elemen dengan display inline.</span>
+
+    <h3>Display Inline-Block</h3>
+    <div class="inline-block">Ini adalah elemen dengan display inline-block.</div>
+    <div class="inline-block">Ini juga elemen dengan display inline-block.</div>
+
+    <h3>Display None</h3>
+    <p class="hidden">Ini adalah elemen dengan display none. Ini tidak akan terlihat.</p>
+
+
+<h2>Penggunaan Properti "display: flex" pada CSS</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    
+    <h1>penggunaan display:grid pada css</h1>
+    
+    <div class="gridparent">
+    <div class="grid g1">a</div>
+     <div class="grid g2">b</div>
+      <div class="grid g3">c</div>
+       <div class="grid g4">d</div>
+        <div class="grid g5">e</div>
+         <div class="grid g6">f</div>
+        
+    </div>
+</body>
+</html>
